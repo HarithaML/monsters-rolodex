@@ -1,7 +1,9 @@
 import React from 'react';
-const MonsterCardList = ({ monsters }) => {
+import  MonsterCard  from './MonsterCard';
+
+ const MonsterCardList = ({ monsters }) => {
     return (
-      <div>
+      <div className='flex flex-wrap overflow-x-auto max-w-full '>
         {monsters.map((monster) => (
           <MonsterCard key={monster.id} monster={monster} />
         ))}
@@ -9,4 +11,4 @@ const MonsterCardList = ({ monsters }) => {
     );
   };
   
-  export default MonsterCardList;
+  export default  MonsterCardList;
